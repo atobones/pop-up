@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="popup" id="popup-1">
+        <div class="overlay"></div>
+        <div class="content">
+        <div class="close-btn" onclick="togglePopup()">&times;</div>
+        <h1>Title</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda id ipsum ratione eum perferendis distinctio culpa quae optio sapiente laboriosam error, eius necessitatibus, similique nulla iusto. Laudantium explicabo ab cum?</p>
+        </div>
+    </div>
+    <button onclick="togglePopup()">Show popup</button>
+    <script>
+        function togglePopup(){
+            document.getElementById("popup-1").classList.toggle("active");
+        }
+    </script>
+</body>
+</html>
